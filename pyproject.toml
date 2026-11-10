@@ -1,0 +1,29 @@
+[project]
+name = "attrition-esn"
+version = "0.1.0"
+description = "Identification des causes d'attrition au sein d'une ESN : analyse exploratoire, feature engineering, classification (XGBoost) et interprétabilité (SHAP)."
+readme = "README.md"
+requires-python = ">=3.11"
+authors = [{ name = "Faiza Khelladi" }]
+dependencies = [
+    "matplotlib>=3.10.8",
+    "numpy>=2.0",
+    "pandas>=3.0.0",
+    "scikit-learn>=1.8.0",
+    "scipy>=1.10.0",
+    "seaborn>=0.13.2",
+    "shap>=0.49.1",
+    "xgboost>=3.2.0",
+]
+
+# outils de développement (installés par défaut avec `uv sync`)
+[dependency-groups]
+dev = [
+    "jupyter>=1.1.1",
+    "notebook>=7.5.3",
+]
+
+# rend le package src/attrition_esn installable (editable) -> importable depuis notebooks/
+[build-system]
+requires = ["uv_build>=0.11.0,<0.12"]
+build-backend = "uv_build"

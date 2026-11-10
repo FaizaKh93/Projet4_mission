@@ -1,0 +1,31 @@
+# --- Environnement Python / uv ---
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+
+# --- Jupyter ---
+.ipynb_checkpoints/
+
+# --- Données intermédiaires et modèles (régénérables) ---
+data/processed/*
+models/*
+!data/processed/.gitkeep
+!models/.gitkeep
+*.pkl
+*.joblib
+
+# --- Archives ---
+*.zip
+*.rar
+
+# --- Fichiers système / éditeurs ---
+.DS_Store
+__MACOSX/
+._*
+~$*
+Thumbs.db
+.vscode/
+.idea/
